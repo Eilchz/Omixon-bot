@@ -1,3 +1,4 @@
+#Para usar este Bot tendras que instalar selenium con: pip install selenium
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
@@ -13,8 +14,7 @@ options.add_argument("--disable-dev-shm-usage")
 
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
-
-
+#Si no eres de Cordobá cambia el nombre de la provincia.
 driver.get("https://cordoba.redesclimaticas.com/next/login?&next=/")
 sleep(3)
 
@@ -30,6 +30,7 @@ login_button = driver.find_element(By.XPATH, '/html/body/div[1]/div/div/div/div[
 login_button.click()
 sleep(8)
 
+#cambia este link dependiendo de la estación más cercana.
 driver.get("https://cordoba.redesclimaticas.com/next/station?s=30405")
 sleep(5)
 
