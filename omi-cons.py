@@ -22,8 +22,8 @@ sleep(3)
 username_input = driver.find_element(By.XPATH, '//*[@id="field-:r2:"]')
 password_input = driver.find_element(By.XPATH, '//*[@id="field-:r3:"]')
 
-username_input.send_keys("Eilchz14")
-password_input.send_keys("Abii2021")
+username_input.send_keys("Tu-usuario")
+password_input.send_keys("Tu-contraseña")
 sleep(3)
 
 login_button = driver.find_element(By.XPATH, '/html/body/div[1]/div/div/div/div[1]/div[1]/div[2]/form/div[4]/button')
